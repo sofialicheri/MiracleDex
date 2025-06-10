@@ -14,14 +14,15 @@ I DO NOT CONSENT TO AI ASSISTED GRADING
 ## 🔷 Part 1 — HTML/CSS Layout and Responsive Design
 
 ### ✅ Requirements Addressed
-- [ ] Landing page created with heading and container
-- [ ] Used Flexbox or Grid layout
-- [ ] Mobile-friendly design with media queries
-- [ ] Elegant, reverent styling with a Google Font
-- [ ] External CSS file used
+- [x] Landing page created with heading and container
+- [x] Used Flexbox or Grid layout
+- [x] Mobile-friendly design with media queries
+- [x] Elegant, reverent styling with a Google Font
+- [x] External CSS file used
 
 ### 📸 Screenshots
 > Paste 1–2 screenshots showing your site on desktop and mobile.
+
 
 ### 🔍 Code Snippets
 > Include relevant HTML and CSS snippets here (layout structure, responsive styling, etc.).
