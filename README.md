@@ -82,6 +82,10 @@ This project was developed using guidance from ChatGPT (OpenAI, 2025). ChatGPT w
 - Structuring the HTML layout into header and grid sections by providing guiding dimensions with margins, padding, and grip-gap in rems.
 - Aligning and centering CSS Grid cards in the responsive screen.
 - Saving each miracle and creating a card for each, with the addList to class and createElement functions.
+- Helped me in adding these two lines:
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  to fix the @media code that was not working on my phone as desired.
 
 The content was mostly based on my own prior notes and assignments from the class lectures and practice, and adapted with ChatGPT’s assistance for layout improvements.
 
