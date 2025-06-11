@@ -81,8 +81,8 @@ body{
     color: black;
     padding: 2rem;
     border-radius: 10px;
-    max-width: 500px;
-    width: 90%;
+    max-width: 400px;;
+    width: 80%;
     position: relative;
     font-family: "Libre Caslon Display", serif;
 }
