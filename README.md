@@ -66,6 +66,8 @@ What did you learn about asynchronous JavaScript? What debugging techniques did 
 
 ### 🖋️ Reflection
 How did using GitHub affect your development process? What new Git or GitHub skills did you gain?
+Using GitHub, at the beginning, affected me negatively. My other class practice projects began all loading to the repository, and I could not figure out a way to delete them, and thus I had to restart my repository and place the items to upload in a directory for easier selection.
+After the initial struggle was over, I began getting more comfortable adding and committing changes, which was very useful for the updates of the project during different days.
 
 ---
 
@@ -86,6 +88,7 @@ This project was developed using guidance from ChatGPT (OpenAI, 2025). ChatGPT w
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   to fix the @media code that was not working on my phone as desired.
+- Guided me in the batch size slicing for my button to correctly split the dataset.
 
 The content was mostly based on my own prior notes and assignments from the class lectures and practice, and adapted with ChatGPT’s assistance for layout improvements.
 

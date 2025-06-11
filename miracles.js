@@ -36,7 +36,17 @@ function renderMiracles(){
         <p>${miracledata.summary}</p>
         <button>Learn More</button>`;
 
+        const button = newcard.querySelector("button");
+        button.addEventListener('click', (event) => showInfo(miracledata))
+
         return newcard;
+    }
+
+    function showInfo(data) {
+        const miracleDetails = document.querySelector(".details");
+        miracleDetails.innerHTML = `
+        <h2>${data.category}</h2>
+        <p>${data.details}</p>`
     }
 
 const loadMoreBtn = document.createElement("button");

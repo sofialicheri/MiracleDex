@@ -76,6 +76,17 @@ body{
     border-radius: 12px;
 }
 
+.details {
+    background: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    font-family: "Libre Caslon Display", serif;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     #grid-cards {
