@@ -185,10 +185,15 @@ function showInfo(data, cardElement) {
 }
 ```
 ### 🖋️ Reflection
+
+
 Working with asynchronous JavaScript was another skill developing challenge during the making of this app! I realized better how async/await works with fetch() for data, realizing that data must load before rendering it! I then set forth a few error-catching codes, and the async allows for the page to be responsive still even while loading!
+
 
 A debugging technique I used to debug the fetching of the data was console.log(),
  which prints statements that show the outcome of the getting of the data. Furthermore, I had to inspect elements of my browser to identify why some elements were not being injected in the desired manner or would break the layout. Tracking the changes through GitHub also avoided multiple catastrophes from happening in my constant experimentation with the code! 
+
+
 ---
 
 ## 🔷 Part 3 — GitHub Repository and Documentation
@@ -203,6 +208,8 @@ A debugging technique I used to debug the fetching of the data was console.log()
 - **Live GitHub Pages Site:** https://sofialicheri.github.io/MiracleDex/
 
 ### 🖋️ Reflection
+
+
 Using GitHub, at the beginning, affected me negatively. My other class practice projects began all loading to the repository and I could not figure out a way to delete them, and thus I had to restart my repository and place the items to upload in a directory for easier selection.
 After the initial struggle was over, I began getting more comfortable adding and committing changes, which was extremely useful for the updates of the project during different days.
 Especially when I began experimenting in how to update a current card to display the detailed information, saving and pushing my successful changes was key before I would try the next part.
@@ -211,6 +218,8 @@ This project allowed me to get direct basic experience tracking changes and upda
 ---
 
 ## 🧠 Final Reflection
+
+
 This app was inspired by the work of the soon-to-be canonized Bl. Carlo Acutis, who did the first website on information about eucharistic miracles he collected from around the world.
 The app consists on a display of a set of multiple cards containing information about several miracles including eucharistic miracles, healing miracles, marian apparitions, and incorrupt saints!
 The purpose intended in the creation of the app is that by following the steps of the young saint, I may showcase the beauty of God's reminders of His infinite Mercy and Love for us through the visible expressions in miracles, putting my newly learned skills to the service and honor of God.
