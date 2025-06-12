@@ -1,5 +1,3 @@
-I DO NOT CONSENT TO AI ASSISTED GRADING
-
 # ✨ MiracleDex Project Report
 
 **Student Name: Sofia Licheri**  
@@ -56,26 +54,32 @@ What did you learn about asynchronous JavaScript? What debugging techniques did 
 ## 🔷 Part 3 — GitHub Repository and Documentation
 
 ### ✅ Requirements Addressed
-- [ ] GitHub repo created and pushed
-- [ ] GitHub Pages deployed
-- [ ] `README.md` contains project description, instructions, and screenshots
+- [x] GitHub repo created and pushed
+- [x] GitHub Pages deployed
+- [x] `README.md` contains project description, instructions, and screenshots
 
 ### 📎 Links
-- **GitHub Repo:** [Paste link here]  
-- **Live GitHub Pages Site:** [Paste link here]
+- **GitHub Repo:** https://github.com/sofialicheri/miracledex
+- **Live GitHub Pages Site:** https://sofialicheri.github.io/MiracleDex/
 
 ### 🖋️ Reflection
-How did using GitHub affect your development process? What new Git or GitHub skills did you gain?
-Using GitHub, at the beginning, affected me negatively. My other class practice projects began all loading to the repository, and I could not figure out a way to delete them, and thus I had to restart my repository and place the items to upload in a directory for easier selection.
-After the initial struggle was over, I began getting more comfortable adding and committing changes, which was very useful for the updates of the project during different days.
+Using GitHub, at the beginning, affected me negatively. My other class practice projects began all loading to the repository and I could not figure out a way to delete them, and thus I had to restart my repository and place the items to upload in a directory for easier selection.
+After the initial struggle was over, I began getting more comfortable adding and committing changes, which was extremely useful for the updates of the project during different days.
+Especially when I began experimenting in how to update a current card to display the detailed information, saving and pushing my successful changes was key before I would try the next part.
+This project allowed me to get direct basic experience tracking changes and updates to code through Git and GitHub, which has been especially useful after the fast class lesson we had on it!
 
 ---
 
 ## 🧠 Final Reflection
+This app was inspired by the work of the soon-to-be canonized Bl. Carlo Acutis, who did the first website on information about eucharistic miracles he collected from around the world.
+The app consists on a display of a set of multiple cards containing information about several miracles including eucharistic miracles, healing miracles, marian apparitions, and incorrupt saints!
+The purpose intended in the creation of the app is that by following the steps of the young saint, I may showcase the beauty of God's reminders of His infinite Mercy and Love for us through the visible expressions in miracles, putting my newly learned skills to the service and honor of God.
 
-Imagine you're explaining this project to a friend who doesn’t code. What does your app do? What are you most proud of? What was the hardest part to get working?
+The hardest challenge in the development of this app was the step between fetching the data and creating a new card for each that can be then updated when clicking "Learn More" or "Close".
+I am very proud of having pushed to get the card to truly expand and even change the button name, text, and function when updating the card - instead of giving up when I though all I could do is display the details of the selected miracle at the top of the screen!
+This improvement makes the user experience of the app more smooth, structured, and organized!
 
-Reflect on both the technical and the spiritual aspects of building a project about Catholic miracles.
+I would love to hear what your favorite miracle is! Feel free to reach me at **sofia.licheri@my.avemaria.edu** to share your thoughts or suggest a new miracle for the collection!
 
 ---
 ## Acknowledgment and References
