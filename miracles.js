@@ -37,16 +37,29 @@ function renderMiracles(){
         <button>Learn More</button>`;
 
         const button = newcard.querySelector("button");
-        button.addEventListener('click', (event) => showInfo(miracledata))
+        button.addEventListener('click', () => showInfo(miracledata, newcard))
 
         return newcard;
     }
 
-    function showInfo(data) {
-        const miracleDetails = document.querySelector(".details");
-        miracleDetails.innerHTML = `
-        <h2>${data.category}</h2>
-        <p>${data.details}</p>`
+    function showInfo(data, cardElement) {
+        const button = cardElement.querySelector("button");
+        const detailedCard = cardElement.querySelector(".details");
+
+        if (detailedCard) {
+            detailedCard.remove();
+            button.textContent = "Learn More";
+        } else{
+            const details = document.createElement("div");
+            details.classList.add("details");
+            details.innerHTML = `
+                <p>${data.category}</p>
+                <p>${data.details}</p>
+            `;
+            cardElement.insertBefore(details, button);
+            button.textContent = "Close";
+
+        }
     }
 
 const loadMoreBtn = document.createElement("button");

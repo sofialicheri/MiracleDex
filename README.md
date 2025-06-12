@@ -35,12 +35,12 @@ What challenges did you face in designing a responsive layout? What did you lear
 ## 🔷 Part 2 — JavaScript + DOM + JSON Integration
 
 ### ✅ Requirements Addressed
-- [ ] Fetched data from:  
+- [x] Fetched data from:  
   `https://gist.githubusercontent.com/trevortomesh/7bbf97b2fbae96639ebf1a254b6a7a70/raw/miracles.json`
-- [ ] Rendered miracle title, location, year, summary
-- [ ] Used `fetch()` and `async/await`
-- [ ] Implemented "Load More" or pagination
-- [ ] Added modal or expandable section with full miracle details
+- [x] Rendered miracle title, location, year, summary
+- [x] Used `fetch()` and `async/await`
+- [x] Implemented "Load More" or pagination
+- [x] Added modal or expandable section with full miracle details
 
 ### 📸 Screenshots
 > Show your miracle cards and one expanded view or modal.
@@ -89,6 +89,7 @@ This project was developed using guidance from ChatGPT (OpenAI, 2025). ChatGPT w
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   to fix the @media code that was not working on my phone as desired.
 - Guided me in the batch size slicing for my button to correctly split the dataset.
+- Corrected my error in my attempt to update and expand the card to show miracle details.
 
 The content was mostly based on my own prior notes and assignments from the class lectures and practice, and adapted with ChatGPT’s assistance for layout improvements.
 

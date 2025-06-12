@@ -77,14 +77,9 @@ body{
 }
 
 .details {
-    background: white;
-    color: black;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 400px;;
-    width: 80%;
-    position: relative;
-    font-family: "Libre Caslon Display", serif;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
 }
 
 /* Responsive design */
