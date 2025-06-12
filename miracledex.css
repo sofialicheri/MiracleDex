@@ -59,6 +59,7 @@ body{
     border-radius: 8px;
     margin-bottom: 12px;
 }
+
 #loadMoreBtn-container {
     display: flex;
     justify-content: center;

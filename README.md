@@ -19,15 +19,120 @@
 - [x] External CSS file used
 
 ### 📸 Screenshots
-> Paste 1–2 screenshots showing your site on desktop and mobile.
-
+<img src="miracledex app browser1.png" width=60%>
+<img src="miracledex mobile1.jpg" width=60%>
+ 
 
 ### 🔍 Code Snippets
-> Include relevant HTML and CSS snippets here (layout structure, responsive styling, etc.).
+#### HTML General Structure:
+```javascript
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>...<title>MiracleDex</title>
+  </head>
+  <body>
+  <div class="page-container">
+    <!-- Header Area -->
+    <header class="header">
+      <h1>MiracleDex</h1>
+      <h2> A catalog of miraculous signs thoughout the history, inspired by Bl. Carlo Acutis' great work!</h2>
+    </header>
+  
+      <!-- Main Grid Section -->
+    <div class="main" id = "grid-cards"></div>
+    <div id="loadMoreBtn-container"></div>
+  </div>
+    <script src="miracles.js"></script>
+  </body>
+  </html>
+```
+
+#### Layout Structure Highlights:
+```javascript
+...
+#grid-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+    width: 80%;
+    max-width: 1200px;
+    grid-gap: 40px;
+    margin: auto;
+}
+
+.card button:hover { background-color: #d3d3b7; opacity: 0.7; }
+
+#loadMoreBtn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #grid-cards {
+    grid-template-columns: 1fr;
+  }
+.card h1{
+    font-size:25px;
+  }
+
+.card h2{
+    font-size:20px;
+  }
+
+.card p{
+    font-size:16px;
+  }
+}
+...
+```
+
+#### JavaScript Code Highlights:
+```javascript
+// establish batch size
+let miracles = [];
+let visibleMiracles = 0;
+let batchSize = 6;
+
+// fetch miracle dataset and render miracle cards, showing batch by batch
+async function loadMiracles() {
+    const response = await fetch('https://gist.githubusercontent.com/trevortomesh/7bbf97b2fbae96639ebf1a254b6a7a70/raw/miracles.json');
+
+    if (!response.ok) {
+        // HTTP-level error (e.g. 404, 500)
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    miracles = await response.json();
+
+    renderMiracles();
+}
+
+function renderMiracles(){
+  const cardset = document.getElementById('grid-cards');
+  const nextBatch = miracles.slice(visibleMiracles, visibleMiracles+batchSize);
+  nextBatch.forEach(miracle => {
+    const card = createElement(miracle);
+    cardset.appendChild(card);
+  })
+  // update visible miracles plus batch size
+  visibleMiracles += batchSize;
+
+}
+...
+```
 
 ### 🖋️ Reflection
-What challenges did you face in designing a responsive layout? What did you learn about structuring HTML/CSS for real-world use?
 
+Designing a responsive layout was not too challenging for me due to the previous practice from the class lesson. The small challenge I faced in making the app responsive was being able to correctly center
+the cards to the middle of the screen, regardless of their size and the size of the screen, since the settings and different options for styling grids can seem too various and overwhelming. However, this was a learning experience to be able to research and be more exposed to what grid styling options a CSS file provides, and play around with them to achieve the look I was hoping to recreate!
 ---
 
 ## 🔷 Part 2 — JavaScript + DOM + JSON Integration
@@ -41,14 +146,41 @@ What challenges did you face in designing a responsive layout? What did you lear
 - [x] Added modal or expandable section with full miracle details
 
 ### 📸 Screenshots
-> Show your miracle cards and one expanded view or modal.
+Here is the expanded view of the cards from the web or the mobile version!
+
+<img src="miracledex app browser2.png" width=60%>
+<img src="miracledex mobile2.jpg" width=60%>
 
 ### 🔍 Code Snippets
-> Include the function you used to fetch the data, render the cards, and handle interaction.
+```javascript
+...
+// updating the card when clicking "Learn more" or "Close" with card details!
+function showInfo(data, cardElement) {
+  const button = cardElement.querySelector("button");
+  const detailedCard = cardElement.querySelector(".details");
 
+  if (detailedCard) {
+    detailedCard.remove();
+    button.textContent = "Learn More";
+  } else{
+    const details = document.createElement("div");
+    details.classList.add("details");
+    details.innerHTML = `
+                <p>${data.category}</p>
+                <p>${data.details}</p>
+            `;
+    // this 'insertBefore' function was exactly perfect for positioning the detailed added text in my card!
+    cardElement.insertBefore(details, button);
+    button.textContent = "Close";
+
+  }
+}
+```
 ### 🖋️ Reflection
-What did you learn about asynchronous JavaScript? What debugging techniques did you use or discover?
+Working with asynchronous JavaScript was another skill developing challenge during the making of this app! I realized better how async/await works with fetch() for data, realizing that data must load before rendering it! I then set forth a few error-catching codes, and the async allows for the page to be responsive still even while loading!
 
+A debugging technique I used to debug the fetching of the data was console.log(),
+ which prints statements that show the outcome of the getting of the data. Furthermore, I had to inspect elements of my browser to identify why some elements were not being injected in the desired manner or would break the layout. Tracking the changes through GitHub also avoided multiple catastrophes from happening in my constant experimentation with the code! 
 ---
 
 ## 🔷 Part 3 — GitHub Repository and Documentation
