@@ -131,8 +131,11 @@ function renderMiracles(){
 
 ### 🖋️ Reflection
 
-Designing a responsive layout was not too challenging for me due to the previous practice from the class lesson. The small challenge I faced in making the app responsive was being able to correctly center
-the cards to the middle of the screen, regardless of their size and the size of the screen, since the settings and different options for styling grids can seem too various and overwhelming. However, this was a learning experience to be able to research and be more exposed to what grid styling options a CSS file provides, and play around with them to achieve the look I was hoping to recreate!
+Designing a responsive layout was not too challenging for me due to the previous practice from the class lesson.
+The small challenge I faced in making the app responsive was being able to correctly center
+the cards to the middle of the screen, regardless of their size and the size of the screen, since the settings 
+and different options for styling grids can seem too various and overwhelming. However, this was a learning experience to be able to research and be more exposed to what grid styling options a CSS file provides,
+and play around with them to achieve the look I was hoping to recreate!
 ---
 
 ## 🔷 Part 2 — JavaScript + DOM + JSON Integration
